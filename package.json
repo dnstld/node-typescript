@@ -5,10 +5,15 @@
   "repository": "git@github.com:dnstld/node-typescript.git",
   "author": "Denis Toledo <contato@denistoledo.com.br>",
   "license": "MIT",
+  "scripts": {
+    "build": "tsc",
+    "dev:server": "ts-node-dev --transpileOnly --ignore-watch node_modules src/server.ts"
+  },
   "dependencies": {
     "express": "^4.17.1"
   },
   "devDependencies": {
+    "ts-node-dev": "^1.0.0-pre.56",
     "typescript": "^3.9.7"
   }
 }
